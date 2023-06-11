@@ -1,0 +1,14 @@
+export { AggregateTextArgs } from "./AggregateTextArgs";
+export { CreateManyTextArgs } from "./CreateManyTextArgs";
+export { CreateOneTextArgs } from "./CreateOneTextArgs";
+export { DeleteManyTextArgs } from "./DeleteManyTextArgs";
+export { DeleteOneTextArgs } from "./DeleteOneTextArgs";
+export { FindFirstTextArgs } from "./FindFirstTextArgs";
+export { FindFirstTextOrThrowArgs } from "./FindFirstTextOrThrowArgs";
+export { FindManyTextArgs } from "./FindManyTextArgs";
+export { FindUniqueTextArgs } from "./FindUniqueTextArgs";
+export { FindUniqueTextOrThrowArgs } from "./FindUniqueTextOrThrowArgs";
+export { GroupByTextArgs } from "./GroupByTextArgs";
+export { UpdateManyTextArgs } from "./UpdateManyTextArgs";
+export { UpdateOneTextArgs } from "./UpdateOneTextArgs";
+export { UpsertOneTextArgs } from "./UpsertOneTextArgs";

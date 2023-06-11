@@ -1,0 +1,35 @@
+import type { GraphQLResolveInfo } from "graphql";
+import { AggregateTextArgs } from "./args/AggregateTextArgs";
+import { CreateManyTextArgs } from "./args/CreateManyTextArgs";
+import { CreateOneTextArgs } from "./args/CreateOneTextArgs";
+import { DeleteManyTextArgs } from "./args/DeleteManyTextArgs";
+import { DeleteOneTextArgs } from "./args/DeleteOneTextArgs";
+import { FindFirstTextArgs } from "./args/FindFirstTextArgs";
+import { FindFirstTextOrThrowArgs } from "./args/FindFirstTextOrThrowArgs";
+import { FindManyTextArgs } from "./args/FindManyTextArgs";
+import { FindUniqueTextArgs } from "./args/FindUniqueTextArgs";
+import { FindUniqueTextOrThrowArgs } from "./args/FindUniqueTextOrThrowArgs";
+import { GroupByTextArgs } from "./args/GroupByTextArgs";
+import { UpdateManyTextArgs } from "./args/UpdateManyTextArgs";
+import { UpdateOneTextArgs } from "./args/UpdateOneTextArgs";
+import { UpsertOneTextArgs } from "./args/UpsertOneTextArgs";
+import { Text } from "../../../models/Text";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateText } from "../../outputs/AggregateText";
+import { TextGroupBy } from "../../outputs/TextGroupBy";
+export declare class TextCrudResolver {
+    aggregateText(ctx: any, info: GraphQLResolveInfo, args: AggregateTextArgs): Promise<AggregateText>;
+    createManyText(ctx: any, info: GraphQLResolveInfo, args: CreateManyTextArgs): Promise<AffectedRowsOutput>;
+    createOneText(ctx: any, info: GraphQLResolveInfo, args: CreateOneTextArgs): Promise<Text>;
+    deleteManyText(ctx: any, info: GraphQLResolveInfo, args: DeleteManyTextArgs): Promise<AffectedRowsOutput>;
+    deleteOneText(ctx: any, info: GraphQLResolveInfo, args: DeleteOneTextArgs): Promise<Text | null>;
+    findFirstText(ctx: any, info: GraphQLResolveInfo, args: FindFirstTextArgs): Promise<Text | null>;
+    findFirstTextOrThrow(ctx: any, info: GraphQLResolveInfo, args: FindFirstTextOrThrowArgs): Promise<Text | null>;
+    texts(ctx: any, info: GraphQLResolveInfo, args: FindManyTextArgs): Promise<Text[]>;
+    text(ctx: any, info: GraphQLResolveInfo, args: FindUniqueTextArgs): Promise<Text | null>;
+    getText(ctx: any, info: GraphQLResolveInfo, args: FindUniqueTextOrThrowArgs): Promise<Text | null>;
+    groupByText(ctx: any, info: GraphQLResolveInfo, args: GroupByTextArgs): Promise<TextGroupBy[]>;
+    updateManyText(ctx: any, info: GraphQLResolveInfo, args: UpdateManyTextArgs): Promise<AffectedRowsOutput>;
+    updateOneText(ctx: any, info: GraphQLResolveInfo, args: UpdateOneTextArgs): Promise<Text | null>;
+    upsertOneText(ctx: any, info: GraphQLResolveInfo, args: UpsertOneTextArgs): Promise<Text>;
+}
